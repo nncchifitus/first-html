@@ -242,8 +242,6 @@ html, body {
     color: #fff;
 }
 
-
-/* Thẻ div có tính chất kế thừa hết chiều ngang mà có thể chiếm */
 /* #header .search-btn { */
     /* Float cũng làm mất tính kế thừa và kéo sang phải */
     /* float: right;
@@ -261,6 +259,8 @@ html, body {
     background-color: #f44336;
     cursor: pointer;
 } */
+
+/* Thẻ div có tính chất kế thừa hết chiều ngang mà có thể chiếm */
 
 /* Slider */
 #slider {
