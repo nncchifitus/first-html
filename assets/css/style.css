@@ -8,6 +8,7 @@ html, body {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    line-height: 1.5;
 }
 
 .clear {
@@ -153,22 +154,23 @@ html, body {
     font-size: 14px;
 } */
 
-#nav, .subnav {
+/* #nav, .subnav {
     list-style-type: none;    
+} */
+#header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    line-height: 46px;
 }
 
-#nav > li {
+#nav > a {
     float: left;
-    padding: 14px 24px;
-    position: relative;;
-}
-
-#nav > li > a {
+    padding: 0 24px;
+    line-height: inherit;
+    position: relative;
     text-transform: uppercase;
 }
 
-#nav > li:hover, 
-#nav > li:hover > a {
+#nav > a:hover {
     cursor: pointer;
     color: black;
     background: #ccc;
@@ -180,6 +182,26 @@ html, body {
     text-decoration: none;
 }
 
+#nav .more-btn {
+    position: relative;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    line-height: inherit;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+#nav .more-btn:hover {
+    cursor: pointer;
+    color: black;
+    background: #ccc;
+}
+
+#nav .more-btn:hover .subnav {
+    display: block;
+}
+
 #nav .subnav {
     display: none;
     position: absolute;
@@ -189,27 +211,26 @@ html, body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-#nav li:hover .subnav {
-    display: block;
-}
-
-#nav .subnav li {
-    padding: 10px 16px;
-    min-width: 160px;
-    display: block;
-}
-
 #nav .subnav a{
+    display: block;
+    padding: 0 16px;
+    min-width: 160px;
     color: #000;
+    line-height: 38px;
 }
 
-.subnav li:hover {
+.subnav a:hover {
     background: #ccc;
+}
+
+.subnav a {
+    text-transform: none;
 }
 
 .search-btn {
     float: right;
-    padding: 14px 18px;
+    padding: 0 18px;
+    line-height: inherit;
 }
 
 .search-btn:hover {
